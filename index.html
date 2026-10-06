@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- TODO before launch: client to approve the title and description -->
+  <title>Cake It Easy | Ube cakes and Filipino desserts in Metro Vancouver</title>
+  <meta name="description" content="Family-run Filipino bakery known for the Ube Rival and Ube Flan cakes. Preorder online and pick up in Vancouver, New Westminster or Tsawwassen. Custom cakes and kids' decorating classes too.">
+  <meta name="theme-color" content="#4A2378">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<!--
+  SHOP LINKS: every "Order" / "See all cakes" / "Book a spot" button points to
+  https://cakeiteasy.ca/shop/ for now. Swap each href for the real WooCommerce
+  product page before launch (search this file for "cakeiteasy.ca/shop").
+-->
+<a class="skip-link" href="#top">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a href="#top" class="wordmark">Cake It Easy</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#cakes">Cakes</a>
+      <a href="#custom">Custom cakes</a>
+      <a href="#locations">Locations</a>
+      <a href="#class">Kids' class</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#bestsellers" class="btn btn--gold header-order">Order a cake</a>
+      <button type="button" class="btn btn--lilac menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Main" hidden>
+    <ul>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#custom">Custom cakes</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="#class">Kids' class</a></li>
+      <li><a href="#story">Our story</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1>Ube cakes and Filipino desserts, baked by our family.</h1>
+        <p class="hero__sub">Made to order in our Nanaimo St kitchen and served at three shops across Metro Vancouver.</p>
+        <div class="button-row">
+          <a href="#bestsellers" class="btn btn--lg btn--gold">Order a cake</a>
+          <a href="#locations" class="btn btn--lg btn--white">Find a location</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <img src="images/ube-message-cake-1600.webp"
+             srcset="images/ube-message-cake-800.webp 800w, images/ube-message-cake-1600.webp 1600w"
+             sizes="(min-width: 1080px) 50vw, 100vw"
+             alt="Lilac ube cake with a Happy Mother's Day message beside a Cake It Easy box and flowers"
+             fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Best sellers -->
+  <section id="bestsellers" class="bestsellers">
+    <div class="container">
+      <h2 class="h2">The two cakes everyone comes back for.</h2>
+      <div class="bestsellers__grid">
+        <article class="bestseller">
+          <div class="bestseller__photo">
+            <img src="images/ube-rival-800.webp" alt="Slice of Ube Rival Cake showing ube chiffon around a cashew sans rival centre" loading="lazy">
+            <span class="badge badge--gold">Top seller</span>
+          </div>
+          <h3>Ube Rival Cake</h3>
+          <p>Our original cashew sans rival layered between ube chiffon, finished with crushed cashews.</p>
+          <div class="bestseller__buy">
+            <span class="price">$60 – $90</span>
+            <a href="https://cakeiteasy.ca/shop/" class="btn btn--gold">Order Ube Rival</a>
+          </div>
+        </article>
+        <article class="bestseller bestseller--offset">
+          <div class="bestseller__photo">
+            <img src="images/ube-flan-800.webp"
+                 srcset="images/ube-flan-800.webp 800w, images/ube-flan-1600.webp 1125w"
+                 sizes="(min-width: 1080px) 50vw, 100vw"
+                 alt="Slice of Ube Flan Cake showing purple chiffon and leche flan layers" loading="lazy">
+            <span class="badge badge--purple">Second best seller</span>
+          </div>
+          <h3>Ube Flan Cake</h3>
+          <p>Creamy leche flan between ube chiffon layers, wrapped in Swiss meringue buttercream.</p>
+          <div class="bestseller__buy">
+            <span class="price">$57 – $87</span>
+            <a href="https://cakeiteasy.ca/shop/" class="btn btn--gold">Order Ube Flan</a>
+          </div>
+        </article>
+      </div>
+      <p class="bestsellers__note">Both come in 6" and 10". Add a message on top for $3.</p>
+    </div>
+  </section>
+
+  <!-- 3. Our story -->
+  <section id="story" class="story">
+    <div class="container story__grid">
+      <div class="story__text">
+        <h2 class="h2 h2--xl">Started online. Now on three corners of the city.</h2>
+        <p class="lead">Cake It Easy began as an online, made-to-order bakery. In February 2023 we opened our storefront and kitchen on Nanaimo St, then New Westminster in 2025, and now Tsawwassen. We're Filipino-owned and family run, and every cake still comes out of the same kitchen.</p>
+      </div>
+      <figure>
+        <img src="images/new-west-storefront-1600.webp"
+             srcset="images/new-west-storefront-800.webp 800w, images/new-west-storefront-1600.webp 1600w"
+             sizes="(min-width: 1000px) 50vw, 100vw"
+             alt="Cake It Easy storefront with purple sign at Shops at New West" loading="lazy">
+        <figcaption>Our New Westminster shop, 3rd floor at Shops at New West.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. More from the kitchen: three staggered columns (read across rows) -->
+  <section id="cakes" class="cakes">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">More from the kitchen.</h2>
+        <a href="https://cakeiteasy.ca/shop/" class="btn btn--purple">See all cakes</a>
+      </div>
+      <div class="masonry">
+        <div class="masonry__col">
+          <article class="product">
+            <img src="images/ube-macapuno-800.webp" alt="Ube cake topped with macapuno coconut strings" loading="lazy">
+            <h3>Ube Macapuno</h3>
+            <span class="price">$55 – $85</span>
+          </article>
+          <article class="product">
+            <img src="images/yema-800.webp" alt="Yema cake with grated cheese on top" loading="lazy">
+            <h3>Yema Cake</h3>
+            <span class="price">$57 – $87</span>
+          </article>
+          <article class="product">
+            <img src="images/bites-800.webp" srcset="images/bites-800.webp 800w, images/bites-1600.webp 1124w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Box of sans rival bites in assorted coatings" loading="lazy">
+            <h3>Bites, gluten free</h3>
+            <span class="price">$20 – $24</span>
+          </article>
+          <article class="product">
+            <img src="images/tuxedo-800.webp" alt="Tuxedo cake with chocolate glaze" loading="lazy">
+            <h3>Tuxedo Cake</h3>
+            <span class="price">$70 – $90</span>
+          </article>
+        </div>
+        <div class="masonry__col masonry__col--2">
+          <article class="product">
+            <img src="images/ube-dubai-800.webp" alt="Ube Dubai cake with pistachio cream" loading="lazy">
+            <h3>Ube Dubai Cake</h3>
+            <span class="price">$70 – $160</span>
+          </article>
+          <article class="product">
+            <img src="images/coco-rival-800.webp" srcset="images/coco-rival-800.webp 800w, images/coco-rival-1600.webp 1242w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Chocolate buttercream cake topped with nuts" loading="lazy">
+            <h3>Coco Rival Cake</h3>
+            <span class="price">$60 – $90</span>
+          </article>
+          <article class="product">
+            <img src="images/creme-brulee-800.webp" alt="Creme brulee cake with a slice lifted out" loading="lazy">
+            <h3>Creme Brulee Cake</h3>
+            <span class="price">$58 – $75</span>
+          </article>
+          <article class="product">
+            <img src="images/chocolate-mousse-800.webp" srcset="images/chocolate-mousse-800.webp 800w, images/chocolate-mousse-1600.webp 1242w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Chocolate mousse cake with whipped cream" loading="lazy">
+            <h3>Chocolate Mousse Cake</h3>
+            <span class="price">$60 – $80</span>
+          </article>
+        </div>
+        <div class="masonry__col masonry__col--3">
+          <article class="product">
+            <img src="images/ube-basque-800.webp" alt="Ube burnt basque cheesecake" loading="lazy">
+            <h3>Ube Burnt Basque Cheesecake</h3>
+            <span class="price">$65</span>
+          </article>
+          <article class="product">
+            <img src="images/sans-rival-800.webp" srcset="images/sans-rival-800.webp 800w, images/sans-rival-1600.webp 1170w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Slice of cashew sans rival" loading="lazy">
+            <h3>Sans Rival Cake, gluten free</h3>
+            <span class="price">$55 – $90</span>
+          </article>
+          <article class="product">
+            <img src="images/chocolate-dubai-800.webp" srcset="images/chocolate-dubai-800.webp 800w, images/chocolate-dubai-1600.webp 1600w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Chocolate Dubai cake with pistachio layer" loading="lazy">
+            <h3>Chocolate Dubai Cake</h3>
+            <span class="price">$70 – $160</span>
+          </article>
+          <article class="product">
+            <img src="images/cupcakes-800.webp" srcset="images/cupcakes-800.webp 800w, images/cupcakes-1600.webp 1600w" sizes="(min-width: 1080px) 33vw, 100vw" alt="Chocolate cupcakes with ube buttercream" loading="lazy">
+            <h3>Cupcakes</h3>
+            <span class="price">$60</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. How ordering works -->
+  <section class="ordering">
+    <div class="container">
+      <h2 class="h2">Every cake is made for you, so order a little ahead.</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">1</span>
+          <h3>Choose your cake</h3>
+          <p>Pick a 6" or 10". Add a message on top for $3, up to 60 characters.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">2</span>
+          <h3>Preorder 1 to 3 days ahead</h3>
+          <p>Vancouver needs 1 to 2 days. New Westminster needs 2 to 3 days. Some cakes need more, and it says so on the cake.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">3</span>
+          <h3>Pick it up</h3>
+          <p>Vancouver from 12:30pm, New Westminster from 1:00pm, until closing.</p>
+        </li>
+      </ol>
+      <p class="ordering__policy">Cancellations less than 24 hours before pickup day can't be refunded. Custom cakes are picked up in Vancouver only, where they're made.</p>
+    </div>
+  </section>
+
+  <!-- 6. Locations. TODO before launch: confirm all hours with the client (the old site lists three versions). -->
+  <section id="locations" class="locations">
+    <div class="container">
+      <h2 class="h2">Three shops, three menus.</h2>
+      <div class="location-cards">
+        <article class="location location--van">
+          <h3>Vancouver</h3>
+          <p class="location__tagline">Main store and kitchen. The only pickup point for custom cakes.</p>
+          <p class="location__desc">Pick up any cake on the menu, plus mini cakes, slices, coffee, halo-halo and cold drinks.</p>
+          <address class="location__details">
+            <span>1211 Nanaimo St, Vancouver, BC V5L 5C5</span>
+            <a class="location__phone" href="tel:+17785040299">778-504-0299</a>
+            <dl class="hours">
+              <dt>Tue – Sat</dt><dd>11:00am – 5:00pm</dd>
+              <dt>Sun – Mon</dt><dd>Closed</dd>
+            </dl>
+          </address>
+        </article>
+        <article class="location location--nw">
+          <h3>New Westminster</h3>
+          <p class="location__tagline">Top-selling ube cakes and a full drinks bar.</p>
+          <p class="location__desc">Bubble tea, ube, coconut and matcha lattes, bubble waffles, mini cakes and slices. Home of the kids' decorating class.</p>
+          <address class="location__details">
+            <span>#360-800 Carnarvon St, Shops at New West, 3rd floor at SkyTrain level</span>
+            <a class="location__phone" href="tel:+12364280163">236-428-0163</a>
+            <dl class="hours">
+              <dt>Mon</dt><dd>12:30 – 7:00pm</dd>
+              <dt>Tue</dt><dd>2:30 – 8:30pm</dd>
+              <dt>Wed</dt><dd>2:30 – 7:30pm</dd>
+              <dt>Thu</dt><dd>1:30 – 7:30pm</dd>
+              <dt>Fri – Sat</dt><dd>12:30 – 10:00pm</dd>
+              <dt>Sun</dt><dd>12:30 – 7:00pm</dd>
+            </dl>
+          </address>
+        </article>
+        <article class="location location--tsa">
+          <h3>Tsawwassen</h3>
+          <p class="location__tagline">Weekends only.</p>
+          <p class="location__desc">Grab a slice or a whole cake while you shop at Tsawwassen Mills.</p>
+          <address class="location__details">
+            <span>5000 Canoe Pass Way, Tsawwassen Mills, in TM Wander near Entry 3</span>
+            <dl class="hours">
+              <dt>Fri</dt><dd>4:30 – 8:00pm</dd>
+              <dt>Sat</dt><dd>1:00 – 7:00pm</dd>
+              <dt>Sun</dt><dd>1:00 – 6:00pm</dd>
+            </dl>
+          </address>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Custom cakes -->
+  <section id="custom" class="custom">
+    <div class="container custom__grid">
+      <div class="collage">
+        <img class="collage__tall" src="images/custom-cake-800.webp" srcset="images/custom-cake-800.webp 800w, images/custom-cake-1600.webp 1000w" sizes="(min-width: 1000px) 30vw, 55vw" alt="Custom mint garden cake with butterflies and ladybugs" loading="lazy">
+        <img class="collage__square" src="images/bites-styled-800.webp" alt="Stack of sans rival bites" loading="lazy">
+        <div class="collage__tile">Message on top, $3</div>
+      </div>
+      <div class="custom__text">
+        <h2 class="h2">Your occasion, made into a cake.</h2>
+        <p class="lead">We make custom cakes for special events. Tell us the occasion, the date and what you have in mind, and we'll take it from there. Custom cakes are picked up at our Vancouver kitchen.</p>
+        <p class="custom__quote">Send your date and idea, and we'll reply with a design and a quote.</p>
+        <button type="button" class="btn btn--lg btn--gold inquiry-toggle" aria-expanded="false" aria-controls="inquiry-form">Start an inquiry</button>
+
+        <!-- The inquiry opens the visitor's email app with the details filled in, addressed to info@cakeiteasy.ca. -->
+        <form id="inquiry-form" class="form" hidden novalidate>
+          <label>Your name
+            <input class="field" type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Email
+            <input class="field" type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>Occasion and date
+            <input class="field" type="text" name="occasion" placeholder="e.g. Birthday, Saturday June 6" required>
+          </label>
+          <label>What do you have in mind?
+            <textarea class="field" name="message" required></textarea>
+          </label>
+          <p class="form__msg" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn--lg btn--purple">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Kids' class -->
+  <section id="class" class="class">
+    <div class="container class__inner">
+      <div class="class__head">
+        <h2 class="h2 h2--xl">Kids decorate their own cake.</h2>
+        <span class="class__price">$95</span>
+      </div>
+      <div class="class__grid">
+        <!-- TODO: replace this panel with a class photo when the client sends one -->
+        <div class="class__image">Kids' decorating class</div>
+        <div class="class__text">
+          <p class="lead">A hands-on class at our New Westminster shop, 10:30am to 12:30pm. Every child goes home with:</p>
+          <ul class="includes">
+            <li>A 6" cake they decorate, chocolate or funfetti</li>
+            <li>A Cake It Easy chef hat and apron</li>
+            <li>A boba drink</li>
+          </ul>
+          <a href="https://cakeiteasy.ca/shop/" class="btn btn--lg btn--purple">Book a spot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Reviews. TODO before launch: quotes are paraphrased, get client sign-off on wording. -->
+  <section class="reviews">
+    <div class="container reviews__inner">
+      <h2 class="h2">What people say after the first slice.</h2>
+      <figure class="quote">
+        <blockquote>“My kids don't usually go for Filipino cakes. The Ube Flan Cake was gone in two days.”</blockquote>
+        <figcaption>Abigail, @thebajraktarevics, on the Ube Flan Cake</figcaption>
+      </figure>
+      <figure class="quote quote--right">
+        <blockquote>“The sweet cashew centre balances the lighter layers perfectly.”</blockquote>
+        <figcaption>Yas, @yas__ol, on the Ube x Sans Rival</figcaption>
+      </figure>
+      <figure class="quote quote--indent">
+        <blockquote>“A sans rival goddess. Two slices in one day.”</blockquote>
+        <figcaption>Lianne, @lianne.am</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<!-- 10. Newsletter + footer -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="newsletter">
+      <h2 class="h2">News from the kitchen, in your inbox.</h2>
+      <form class="newsletter__form" novalidate>
+        <label for="newsletter-email" class="visually-hidden">Your email</label>
+        <input id="newsletter-email" class="field" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+        <button type="submit" class="btn btn--lg btn--gold">Subscribe</button>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="footer__cols">
+      <address class="footer__col">
+        <span class="footer__title">Vancouver</span>
+        <span>1211 Nanaimo St<br>Vancouver, BC V5L 5C5</span>
+        <a href="tel:+17785040299" class="footer__strong">778-504-0299</a>
+      </address>
+      <address class="footer__col">
+        <span class="footer__title">New Westminster</span>
+        <span>#360-800 Carnarvon St<br>Shops at New West, 3rd floor</span>
+        <a href="tel:+12364280163" class="footer__strong">236-428-0163</a>
+      </address>
+      <address class="footer__col">
+        <span class="footer__title">Tsawwassen</span>
+        <span>5000 Canoe Pass Way<br>Tsawwassen Mills, near Entry 3</span>
+        <span>Weekends only</span>
+      </address>
+      <address class="footer__col">
+        <span class="footer__title">Say hi</span>
+        <a href="mailto:info@cakeiteasy.ca">info@cakeiteasy.ca</a>
+        <a href="https://instagram.com/cakeiteasy.ca" class="footer__strong">Instagram @cakeiteasy.ca</a>
+      </address>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__tagline">Life is what you bake of it.</span>
+      <span class="footer__copy">© 2026 Cake It Easy Desserts Ltd.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Phones only (below 768px): spacer plus a fixed "Order a cake" bar -->
+<div class="bottom-spacer" aria-hidden="true"></div>
+<div class="bottom-bar">
+  <a href="#bestsellers" class="btn btn--gold">Order a cake</a>
+</div>
+</body>
+</html>
